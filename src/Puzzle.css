@@ -14,6 +14,12 @@
     flex-direction: column;
 }
 
+.clue {
+    position: sticky;
+    offset-block-start: 0px;
+    background-color: white;
+}
+
 .cell {
     height: 24px;
     width: 24px;
@@ -29,12 +35,13 @@
     background-color: pink;
 }
 
-.selected {
+.cell:focus {
     background-color: lightcoral;
+    outline: none;
 }
 
 .black {
-    background-color: black;
+    background-color: black !important;
 }
 
 .letter-picker {
