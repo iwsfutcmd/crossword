@@ -1,0 +1,43 @@
+.puzzle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clues-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.clues {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell {
+    height: 24px;
+    width: 24px;
+    border: 1px black solid;
+    user-select: none;
+}
+
+.wrong-letter {
+    color: red;
+}
+
+.clue-selected {
+    background-color: pink;
+}
+
+.selected {
+    background-color: lightcoral;
+}
+
+.black {
+    background-color: black;
+}
+
+.letter-picker {
+    display: flex;
+    justify-content: space-between;
+}
