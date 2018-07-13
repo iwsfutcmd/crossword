@@ -14,13 +14,21 @@
     flex-direction: column;
 }
 
-.clue {
+.top-bar {
     position: sticky;
     offset-block-start: 0px;
+    display: flex;
+    justify-content: space-between;
+    inline-size: 100%;
+}
+
+.clue {
+    line-height: 1em;
     background-color: white;
 }
 
 .cell {
+    line-height: 1em;
     height: 24px;
     width: 24px;
     border: 1px black solid;
@@ -47,4 +55,10 @@
 .letter-picker {
     display: flex;
     justify-content: space-between;
+    max-inline-size: 400px;
+    flex-flow: row wrap;
+    position: sticky;
+    offset-block-end: 0;
+    padding-block-end: 16px;
+    background-color: white;
 }

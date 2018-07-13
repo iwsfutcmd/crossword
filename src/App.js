@@ -3,10 +3,10 @@ import './App.css';
 
 import Puzzle from './Puzzle';
 
-import puz from './puzzle.json';
+import puzzle from './puzzle.json';
 
-const puzzle = puz.grid;
-const clues = puz.clues;
+// const puzzle = puz.grid;
+// const clues = puz.clues;
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header> */}
         <div className="puzzle-container">
-          <Puzzle puzzle={puzzle} clues={clues}/>
+          <Puzzle puzzle={puzzle}/>
         </div>
       </div>
     );
